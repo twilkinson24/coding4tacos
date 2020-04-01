@@ -1,0 +1,56 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+.navbar-light {
+    font-family: Helvetica,'Segoe UI', Verdana, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    .navbar-brand {
+      color: $navbar-light-brand-color;
+  
+      @include hover-focus {
+        color: $navbar-light-brand-hover-color;
+      }
+    }
+  
+    .navbar-nav {
+      .nav-link {
+        color: $navbar-light-color;
+  
+        @include hover-focus {
+          color: $navbar-light-hover-color;
+        }
+  
+        &.disabled {
+          color: $navbar-light-disabled-color;
+        }
+      }
+  
+      .show > .nav-link,
+      .active > .nav-link,
+      .nav-link.show,
+      .nav-link.active {
+        color: $navbar-light-active-color;
+      }
+    }
+  
+    .navbar-toggler {
+      color: $navbar-light-color;
+      border-color: $navbar-light-toggler-border-color;
+    }
+  
+    .navbar-toggler-icon {
+      background-image: $navbar-light-toggler-icon-bg;
+    }
+  
+    .navbar-text {
+      color: $navbar-light-color;
+      a {
+        color: $navbar-light-active-color;
+  
+        @include hover-focus {
+          color: $navbar-light-active-color;
+        }
+      }
+    }
+  }
