@@ -1,4 +1,22 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+h1,h2,h3 {
+  color: $orange;
+}
+
+.text-light-gray {
+  color: $gray-500;
+}
+
+p {
+  font-size: 1.3rem;
+  color: $gray-700;
+}
+
+.lead {
+  font-size: 1.5rem;
+  color: #222;
+}
+
 .navbar-light {
     font-family: Helvetica,'Segoe UI', Verdana, sans-serif;
     font-size: 0.9rem;
@@ -7,6 +25,7 @@
     letter-spacing: 0.5px;
     .navbar-brand {
       color: $navbar-light-brand-color;
+      max-width: 225px;
   
       @include hover-focus {
         color: $navbar-light-brand-hover-color;
