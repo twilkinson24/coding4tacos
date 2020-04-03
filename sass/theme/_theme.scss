@@ -73,3 +73,32 @@ p {
       }
     }
   }
+
+  /* blog */
+  .blog {
+    article {
+      margin-top: 2rem;
+      .entry-header .entry-title{
+        font-size: 1.5rem;
+      }
+
+      .entry-content .p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  aside {
+    ul li {
+      margin-bottom: 1rem;
+
+      a {
+        color: #555;
+      }
+    }
+  }
+
+  /* CF7 */
+  .post-31 .entry-content .wpcf7 {
+    margin: 0 !important;
+  }

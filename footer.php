@@ -27,7 +27,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-						<p>Built by <a href="https://twilkinson.com/">Taylor Wilkinson</a> using WordPress and the <a href="https://understrap.com/">Understrap</a> theme.</p>
+						<p>
+							<small>
+								Built by <a href="https://twilkinson.com/">Taylor Wilkinson</a> using WordPress and the <a href="https://understrap.com/" target="_blank">Understrap</a> theme.
+							</small>
+						</p>
 
 					</div><!-- .site-info -->
 
