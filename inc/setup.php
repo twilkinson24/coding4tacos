@@ -136,4 +136,24 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 		}
 		return $post_excerpt;
 	}
+
+
+
+	function create_video_post_type() {
+		register_post_type('videos',
+						  array(
+						  'labels' => array(
+							  'name' => __('Videos'),
+							 'singular_name' => __('Video')
+							  ),
+							  'public' => true,
+							  'show_in_admin_bar' => true,
+							  'show_in_rest' => true,
+							  'supports' => array('title', 'editor', 'excerpt', 'thumbnail')
+						  ));
+		
+		add_post_type_support('videos', array('thumbnail'));
+	}
+	
+	add_action('init', 'create_video_post_type');
 }
