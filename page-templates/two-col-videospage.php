@@ -41,6 +41,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12 content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
+				<div class="row"><h3 class="w-100 has-text-align-center text-light-gray lead my-5">Web Development // Freelancing // WordPress // Learning to Code </h3></div>
 				<div class="row"><!-- start row -->
 					<?php  
 					$row_start = 1;

@@ -73,7 +73,24 @@ p {
       }
     }
   }
-
+@media only screen and (max-width: 768px) {
+  #desktop-logo {
+    display: none;
+  }
+  #mobile-nav-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  #mobile-logo {
+    max-width: 200px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #mobile-logo {
+    display: none;
+  }
+}
   /* blog */
   .blog {
     article {
