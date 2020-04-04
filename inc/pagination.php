@@ -12,10 +12,6 @@ if ( ! function_exists( 'understrap_pagination' ) ) {
 
 	function understrap_pagination( $args = array(), $class = 'pagination' ) {
 
-		if ( $GLOBALS['wp_query']->max_num_pages <= 1 ) {
-			return;
-		}
-
 		$args = wp_parse_args(
 			$args,
 			array(
@@ -26,10 +22,14 @@ if ( ! function_exists( 'understrap_pagination' ) ) {
 				'screen_reader_text' => __( 'Posts navigation', 'understrap' ),
 				'type'               => 'array',
 				'current'            => max( 1, get_query_var( 'paged' ) ),
+				'total'              => $GLOBALS['wp_query']->max_num_pages, // Check for pages...
 			)
 		);
 
-		$links = paginate_links( $args );
+		// Nothing to paginate so let's bail...
+		if ( ! $links = paginate_links( $args ) ) {
+		    return;
+		}
 
 		?>
 
